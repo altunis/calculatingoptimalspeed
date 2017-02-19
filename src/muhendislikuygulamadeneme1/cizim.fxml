@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anc_cizim" onMouseDragged="#basiliyor" onMousePressed="#basildi" onMouseReleased="#birakildi" prefHeight="612.0" prefWidth="772.0" style="-fx-background-color: #91909F;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="muhendislikuygulamadeneme1.CizimController">
+   <children>
+      <ImageView fx:id="img_utban" fitHeight="50.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../pictures/utban.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btngeri" layoutX="620.0" layoutY="10.0" mnemonicParsing="false" onAction="#gerigit" prefHeight="40.0" prefWidth="140.0" style="-fx-font-weight: bold;" stylesheets="@mucss.css" text="Geri" />
+   </children>
+</AnchorPane>

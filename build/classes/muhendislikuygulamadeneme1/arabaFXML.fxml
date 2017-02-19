@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="612.0" prefWidth="772.0" style="-fx-background-color: #91909F;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="muhendislikuygulamadeneme1.ArabaFXMLController">
+   <children>
+      <TextField fx:id="txt_arabagenisligi" layoutX="300.0" layoutY="370.0" promptText="Metre" style="-fx-font-weight: bold;" />
+      <TextField fx:id="txt_tekeruzunlugu" layoutX="300.0" layoutY="300.0" promptText="Metre" style="-fx-font-weight: bold;" />
+      <TextField fx:id="txt_uzunluk" layoutX="300.0" layoutY="230.0" promptText="Metre" style="-fx-font-weight: bold;" />
+      <TextField fx:id="txt_marka" layoutX="300.0" layoutY="160.0" style="-fx-font-weight: bold;" />
+      <Button layoutX="300.0" layoutY="500.0" mnemonicParsing="false" onAction="#btn_virajekle" prefHeight="40.0" prefWidth="140.0" style="-fx-font-weight: bold;" stylesheets="@mucss.css" text="Ekle" />
+      <Button layoutX="620.0" layoutY="10.0" mnemonicParsing="false" onAction="#btn_virajgeri" prefHeight="40.0" prefWidth="140.0" style="-fx-font-weight: bold;" stylesheets="@mucss.css" text="Geri" />
+      <Label layoutX="100.0" layoutY="375.0" style="-fx-font-weight: bold;" text="Araba Genisligi" />
+      <Label layoutX="100.0" layoutY="305.0" prefHeight="21.0" prefWidth="143.0" style="-fx-font-weight: bold;" text="Teker Uzunlugu" />
+      <Label layoutX="100.0" layoutY="235.0" style="-fx-font-weight: bold;" text="Uzunluk" />
+      <Label layoutX="100.0" layoutY="165.0" style="-fx-font-weight: bold;" text="Marka" />
+   </children>
+</AnchorPane>

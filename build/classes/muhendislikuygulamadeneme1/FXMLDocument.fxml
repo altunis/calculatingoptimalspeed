@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="612.0" prefWidth="772.0" style="-fx-background-color: #91909F;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="muhendislikuygulamadeneme1.FXMLDocumentController">
+   <children>
+      <Button fx:id="btn_giris" layoutX="505.0" layoutY="506.0" mnemonicParsing="false" onAction="#girisyap" prefHeight="40.0" prefWidth="140.0" style="-fx-font-weight: bold;" stylesheets="@mucss.css" text="Simülasyon" />
+      <Label fx:id="lbl_yazi" layoutX="138.0" layoutY="562.0" opacity="0.3" text="Bilgin GÜNGÖR - İsmail ALTUN">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tbl_arabalar" editable="true" maxWidth="1.7976931348623157E308" prefHeight="180.0" prefWidth="775.0">
+        <columns>
+            <TableColumn fx:id="col_arabaid" prefWidth="75.0" text="Araba ID" />
+          <TableColumn fx:id="col_arabamarka" prefWidth="111.0" style="-fx-font-weight: bold;" text="Araba Marka" />
+            <TableColumn fx:id="col_arabauzunluk" prefWidth="178.0" style="-fx-font-weight: bold;" text="Araba Uzunluk (m)" />
+            <TableColumn fx:id="col_arabagenislik" minWidth="0.0" prefWidth="146.0" style="-fx-font-weight: bold;" text="Araba Genişliği (m)" />
+            <TableColumn fx:id="col_tekeryukseklik" prefWidth="222.0" style="-fx-font-weight: bold;" text="Teker Yüksekliği (m)" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tbl_virajlar" layoutX="1.0" layoutY="296.0" prefHeight="192.0" prefWidth="775.0">
+         <columns>
+            <TableColumn fx:id="col_virajid" prefWidth="75.0" text="Viraj ID" />
+            <TableColumn fx:id="col_virajad" prefWidth="135.0" style="-fx-font-weight: bold;" text="Viraj Adı" />
+            <TableColumn fx:id="col_surtunmekatsayisi" prefWidth="163.0" style="-fx-font-weight: bold;" text="Sürtünme Katsayısı" />
+            <TableColumn fx:id="col_egim" minWidth="0.0" prefWidth="121.0" style="-fx-font-weight: bold;" text="Eğim°" />
+            <TableColumn fx:id="col_yaricap" prefWidth="166.0" style="-fx-font-weight: bold;" text="Yarı Çap (m)" />
+         </columns>
+      </TableView>
+      <Button fx:id="btn_hesapla" layoutX="35.0" layoutY="506.0" mnemonicParsing="false" onAction="#hesapla" prefHeight="40.0" prefWidth="140.0" style="-fx-font-weight: bold;" stylesheets="@mucss.css" text="Hesapla" />
+      <Button fx:id="btn_virajekle" layoutX="505.0" layoutY="215.0" mnemonicParsing="false" onAction="#virajekle" prefHeight="40.0" prefWidth="140.0" style="-fx-font-weight: bold;" stylesheets="@mucss.css" text="Viraj Ekle" />
+      <Button fx:id="btn_arabaekle" layoutX="35.0" layoutY="215.0" mnemonicParsing="false" onAction="#arabaekle" prefHeight="40.0" prefWidth="140.0" style="-fx-font-weight: bold;" stylesheets="@mucss.css" text="Araba Ekle" />
+   </children>
+</AnchorPane>
